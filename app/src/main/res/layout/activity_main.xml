@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="点击改变文字颜色"
+                android:textAlignment="gravity"
+                android:textColor="@color/btn_color_bg_selector"
+                android:textSize="25sp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_seletor"
+                android:text="点击改变背景颜色"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg_seletor"
+                android:text="点击改变背景和文字颜色"
+                android:textColor="@color/btn_color_bg_selector" />
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/check_bg_seletor"
+                android:gravity="center"
+                android:text="Checked：点击改变背景" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:button="@drawable/check_icon_bg"
+                android:gravity="center"
+                android:text="Checked：点击改变图片" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_1"
+                    style="@style/RadioStyle"
+                    android:checked="true"
+                    android:text="A" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_2"
+                    style="@style/RadioStyle"
+                    android:text="B" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_3"
+                    style="@style/RadioStyle"
+                    android:text="C" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_4"
+                    style="@style/RadioStyle"
+                    android:text="D" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_5"
+                    style="@style/RadioStyle"
+                    android:text="E" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_state_selector"
+                    android:button="@null"
+                    android:checked="true"
+                    android:text="Tab1" />
+
+                <RadioButton
+                    android:id="@+id/radio_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_state_selector"
+                    android:button="@null"
+                    android:text="Tab2" />
+
+                <RadioButton
+                    android:id="@+id/radio_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_state_selector"
+                    android:button="@null"
+                    android:text="Tab3" />
+
+                <RadioButton
+                    android:id="@+id/radio_4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/tab_state_selector"
+                    android:button="@null"
+                    android:text="Tab4" />
+            </RadioGroup>
+
+            <com.example.drawabledemo.TextViewSelected
+                android:id="@+id/tv_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/selected_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="TextView+Selected"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_seletor_enable"
+                    android:enabled="false"
+                    android:padding="5dp"
+                    android:text="按钮点击+Unenable"
+                    android:textColor="@color/btn_enable_seletor"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_seletor_enable"
+                    android:enabled="true"
+                    android:padding="5dp"
+                    android:text="按钮点击+Enable"
+                    android:textColor="@color/btn_enable_seletor"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Foucs状态器"
+                android:textColor="@color/foucs_color_seletor" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
